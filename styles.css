@@ -33,10 +33,6 @@ h1 {
     animation: marquee 30s linear infinite;
 }
 
-.marquee span:hover {
-    animation-play-state: paused;
-}
-
 .marquee span span {
     padding-left: 3em;
     padding-right: 3em;
