@@ -33,65 +33,138 @@
     <div class="layer-container">
 
         <div class="layer active">
-            <h3 class="layer-title"></h3>
-            <p class="layer-text"></p>
-            <p class="layer-text"></p>
-            <p class="layer-text"></p>
-            <button class="layer-toggle">                
+            <h3 class="layer-title">
+                7. Application
+            </h3>
+            <p class="layer-text">
+                The application layer is leveraged by end-user software such as web browsers and email clients. At this
+                layer, protocols allow software to send and receive information; presenting meaningful data to users.
+            </p>
+            <p class="layer-text">
+                Protocol Data Unit: data
+            </p>
+            <p class="layer-text">
+                Example protocols: HTTP, FTP, SMTP, POP3, IMAP, SSH, Telnet, DNS
+            </p>
+            <button class="layer-toggle">
+            
             </button>
         </div>
 
         <div class="layer active">
-            <h3 class="layer-title"></h3>
-            <p class="layer-text"></p>
-            <p class="layer-text"></p>
-            <p class="layer-text"></p>
-            <button class="layer-toggle">                
+            <h3 class="layer-title">
+                6. Presentation
+            </h3>
+            <p class="layer-text">
+                The presentation layer prepares data for the application layer. It defines how two devices should
+                encode, encrypt, and compress data to ensure that data is received correctly on the other end. This
+                layer takes data transmitted by the application layer; preparing it for transmission over the session
+                layer.
+            </p>
+            <p class="layer-text">
+                Protocol Data Unit: data
+            </p>
+            <p class="layer-text">
+                Example protocols: SSL, TLS, AFP, XDR 
+            </p>
+            <button class="layer-toggle">
             </button>
         </div>
 
         <div class="layer active">
-            <h3 class="layer-title"></h3>
-            <p class="layer-text"></p>
-            <p class="layer-text"></p>
-            <p class="layer-text"></p>
-            <button class="layer-toggle">                
+            <h3 class="layer-title">
+                5. Session
+            </h3>
+            <p class="layer-text">
+                The session layer creates communication channels (sessions) between devices. It ensures that those
+        sessions stay open and functional while data is transferred, and closes them when communication ends. This
+        layer can set checkpoints during a data transfer so that devices can resume that transfer in the case of
+        interruption.
+            </p>
+            <p class="layer-text">
+                Protocol Data Unit: data
+            </p>
+            <p class="layer-text">
+                Example protocols: NetBIOS, SMPP, RPC, SDP, SMB
+            </p>
+            <button class="layer-toggle">
             </button>
         </div>
 
         <div class="layer active">
-            <h3 class="layer-title"></h3>
-            <p class="layer-text"></p>
-            <p class="layer-text"></p>
-            <p class="layer-text"></p>
-            <button class="layer-toggle">                
+            <h3 class="layer-title">
+                4. Transport
+            </h3>
+            <p class="layer-text">
+                The transport layer breaks the data transferred in the session layer into segments. It reassembles the segments
+                on the receiving end into data that can be used by the session layer. This layer also carries out flow control
+                and error control.
+            </p>
+            <p class="layer-text">
+                Protocol Data Unit: segment
+            </p>
+            <p class="layer-text">
+                Example protocols: TCP, UDP, SPX
+            </p>
+            <button class="layer-toggle">
             </button>
         </div>
 
         <div class="layer active">
-            <h3 class="layer-title"></h3>
-            <p class="layer-text"></p>
-            <p class="layer-text"></p>
-            <p class="layer-text"></p>
-            <button class="layer-toggle">                
+            <h3 class="layer-title">
+                3. Network
+            </h3>
+            <p class="layer-text">
+                The network layer has two main functions. The first function is breaking up segments into network packets, which
+        are reassembled on the receiving end. The second function is routing packets by discovering the best path across
+        a physical network. This layer uses network addresses to route packets to a destination node.
+            </p>
+            <p class="layer-text">
+                Protocol Data Unit: packet
+            </p>
+            <p class="layer-text">
+                Example protocols: IP, ICMP, ARP, NAT
+            </p>
+            <button class="layer-toggle">
             </button>
         </div>
 
         <div class="layer active">
-            <h3 class="layer-title"></h3>
-            <p class="layer-text"></p>
-            <p class="layer-text"></p>
-            <p class="layer-text"></p>
-            <button class="layer-toggle">                
+            <h3 class="layer-title">
+                2. Data Link
+            </h3>
+            <p class="layer-text">
+                The data link layer establishes and terminates a connection between two physically-connected nodes on a network.
+        Packets are broken in up into frames, which are sent from source to destination. This layer is composed
+        of two sublayers. Logical Link Control (LLC) identifies network protocols, performs error checking, and
+        synchronizes frames. Media Access Control (MAC) uses MAC addresses to connect devices and define permissions to
+        transmit and receive data.
+            </p>
+            <p class="layer-text">
+                Protocol Data Unit: frame
+            </p>
+            <p class="layer-text">
+                Example protocols: LLC, MAC, Ethernet, Wi-Fi, VLAN
+            </p>
+            <button class="layer-toggle">
             </button>
         </div>
 
         <div class="layer active">
-            <h3 class="layer-title"></h3>
-            <p class="layer-text"></p>
-            <p class="layer-text"></p>
-            <p class="layer-text"></p>
-            <button class="layer-toggle">                
+            <h3 class="layer-title">
+                1. Physical
+            </h3>
+            <p class="layer-text">
+                The physical layer is responsible for the physical cable or wireless connection between network nodes. This
+                layer is responsible for transmission of raw data bits, while taking care of bit rate control.
+            </p>
+            <p class="layer-text">
+                Protocol Data Unit: bit
+            </p>
+            <p class="layer-text">
+                Example protocols: USB, DSL, Ethernet, Wi-Fi, ISDN
+            </p>
+            <button class="layer-toggle">
             </button>
         </div>
 
